@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Sign Up Page</title>
+        <link rel = "stylesheet" type = "text/css" href = "css/signup.css"/>
+        <script type = "text/javascript" src = "scripts/validate.js" ></script>
+        <script>
+            function checkPasswordMatch(e){
+              var password = document.getElementById('password');
+              var check_password = document.getElementById('password-check');
+              if(password.value.equal(check_password.value)){
+                e.submit();
+              }
+              else{
+                makeRed(password);
+                makeRed(check_password);
+                alert("Passwords do not match");
+                e.preventDefault();
+              }
+          }        </script>
+  
+    </head>
+    <body>
+      <div class="logo">
+        <img src="src\client\img\1.png" alt="Email this to someone" style="width:50px;height:50px;">
+       </div>
+      <div class="topnav">
+        <link rel="stylesheet" href="src\client\css\forumpages.css" />
+        <a href="guest_homepage.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="sitestosee.html">Sites To See</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="business.html">Business</a>
+        <a href="liveweather.html">Live Weather</a>
+        <div class="loginbuttons">
+            <a class="active" href="signup.html">Sign Up</a>
+            <a href="login.html">Sign In</a>
+        </div>
+      </div>
+      <head>
+        <style>
+        h1 {text-align: center;}
+        </style>
+        </head>
+        <h1 style="color: rgb(224, 53, 53);">Create an Account:</h1>
+      <div class="form-center">
+        <form method = "post" action = "newuser.php" id = "mainForm" enctype="multipart/form-data">
+            Upload a profile picture:<br>
+            <br>
+            <input type = "file" name = "userImage" id = "userImage" >
+            <br>
+            First Name:<br>
+            <input type="text" name="firstname" id="firstname" class="required" placeholder="First name...">
+            <br>
+            Last Name:<br>
+            <input type="text" name="lastname" id="lastname" class="required" placeholder="Last name...">
+            <br>
+            Username:<br>
+            <input type="text" name="username" id="username" class="required" placeholder="Username...">
+            <br>
+            Email:<br>
+            <input type="text" name="email" id="email" class="required" placeholder="Email address...">
+            <br>
+            Create a Password:<br>
+            <input type="password" name="password" id="password" class="required" placeholder="Password...">
+            <br>
+            Re-enter Password:<br>
+            <input type="password" name="password-check" id="password-check" class="required" placeholder="One more time...">
+            <br><br>
+            <input type="submit" value="Create New User">
+          </form>
+        </div>
+          </body>
+</html>

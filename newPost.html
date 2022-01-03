@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> New Thread Page</title>
+        <link rel = "stylesheet" type = "text/css" href = "css/newPost.css"/>          
+    </head>
+    <body>
+      <div class="logo">
+        <img src="src\client\img\1.png" alt="Email this to someone" style="width:50px;height:50px;">
+       </div>
+      <div class="topnav">
+        <link rel="stylesheet" href="src\client\css\forumpages.css" />
+        <a href="guest_homepage.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="sitestosee.html">Sites To See</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="business.html">Business</a>
+        <a href="liveweather.html">Live Weather</a>
+      </div>
+      <head>
+        <style>
+        h1 {text-align: center;}
+        </style>
+        </head>
+        <h1 style="color: rgb(224, 53, 53);">Create a New Thread:</h1>
+      <div class="form-center">
+        <form method = 'POST' action = "submitPost.php" id = 'mainForm'>
+            Title:<br>
+            <input type="text" name= "title" id = "title" class="required" placeholder="Name your thread!">
+            <br>
+            Content:<br>
+            <textarea type="text" name="content" id="content" class="required" placeholder="What's on your mind?" rows="4" cols = "50"></textarea>
+            <br>
+           Upload Image (optional):<br>
+            <input type = "file" name="image" id="image">
+            <br>
+            Category:<br><br>
+            <select id="category" name="category" class= "required">
+                <option value="Business">Business</option>
+                <option value="News">News</option>
+                <option value="Sites To See">Sites To See</option>
+                <option value="Events">Events</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" value="Create Thread!">
+        </form>  
+        </div>
+          </body>
+</html>

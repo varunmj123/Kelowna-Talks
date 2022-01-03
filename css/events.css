@@ -1,0 +1,100 @@
+html{
+    background:
+      /* top, transparent black, faked with gradient */ 
+      linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ),
+      /* bottom, image */
+      url("../src/client/img/wp4620320.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+  }
+  .bgimg {
+    /* The image used */
+    background:
+      /* top, transparent black, faked with gradient */ 
+      
+      /* bottom, image */
+      url("../src/client/img/wp4620320.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  body{
+    font-family: Tahoma, Helvetica, sans-serif;
+  }
+  p,
+  body{
+      font-size: 0.9em;
+  }
+  div.form-center {
+      text-align: center;
+      background-color: rgba(0,0,0,.5);
+      color: #fff;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+  }
+  form
+  {
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+  }
+  input[type=text] {
+      width: 100%;
+      padding: 8px 8px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+    input[type=password] {
+      width: 100%;
+      padding: 8px 8px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+    input[type=file] {
+      width: 100%;
+      padding: 8px 8px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+    div.img{
+        max-width: 100%;
+        height: auto;
+        width: auto; /* ie8 */
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        padding: 3 3 3 3;
+        border: 3px solid #555;
+        position: absolute;
+        box-sizing: border-box;
+        border-width: 1px;
+        display:inline-block;
+    }
+    .image-box{
+        padding: 10px 10px 10px 10px;
+        background-color: red;
+        margin-left: 100px;
+        display:inline-block;
+        height: auto;
+        width: auto;
+        overflow-wrap: break-word;
+    }
+    div.container{
+        text-align:center
+    }

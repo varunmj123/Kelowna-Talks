@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Kelowna Weather</title>
+      <link rel = "stylesheet" type = "text/css" href = "css/liveweather.css"/>
+   </head>
+   <link rel="stylesheet" href="src\client\css\forumpages.css" />
+   <div class="topnav">
+    <a href="guest_homepage.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="sitestosee.html">Sites To See</a>
+    <a href="news.html">News</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="business.html">Business</a>
+    <a class="active" href="liveweather.html">Live Weather</a>
+    <div class="loginbuttons">
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Sign In</a>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <div class="form-center">
+     <h1 style="color:rgb(238, 203, 48);">Kelowna Weather</h1>
+  </div>
+  <br>
+<!-- Embedding weatherwidget API -->
+  <a class="weatherwidget-io" href="https://forecast7.com/en/49d89n119d50/kelowna/" data-label_1="KELOWNA" data-label_2="WEATHER" data-theme="original" >KELOWNA WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+<br>
+<div class="form-center">
+   <h1 style="color:rgb(48, 115, 238);">Map of Kelowna</h1>
+</div>
+<br>
+<!-- Embedding Google Maps API -->
+<div style="overflow:hidden;max-width:100%;width:500px;height:500px; margin-left: auto;margin-right: auto;">
+   <div id="embeddedmap-display" style="height:100%; width:100%;max-width:100%;">
+      <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=kelowna&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+      </iframe>
+   </div>
+   <a class="googlemap-code-enabler" rel="nofollow" href="https://dedicatedserver.expert" id="get-mapdata">dedicatedserver.expert</a>
+   <style>#embeddedmap-display img{max-height:none;max-width:none!important;background:none!important;} </style>
+</div>
+

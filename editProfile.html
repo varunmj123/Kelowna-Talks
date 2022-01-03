@@ -1,0 +1,52 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title> Edit Profile</title>
+            <link rel = "stylesheet" type = "text/css" href = "css/editProfile.css"/>           
+        </head>
+        <body>
+        <div class="logo">
+            <img src="src\client\img\1.png" alt="Email this to someone" style="width:50px;height:50px;">
+        </div>
+        <div class="topnav">
+            <link rel="stylesheet" href="src\client\css\forumpages.css" />
+            <a href="guest_homepage.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="sitestosee.html">Sites To See</a>
+            <a href="news.html">News</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="business.html">Business</a>
+            <a href="liveweather.html">Live Weather</a>
+            <div class="loginbuttons">
+                <a href="signup.html">Sign Up</a>
+                <a href="login.html">Sign In</a>
+            </div>
+        </div>
+        <head>
+            <style>
+            h1 {text-align: center;}
+            </style>
+            </head>
+            <h1 style="color: rgb(224, 53, 53);">Edit your profile</h1>
+        <div class="form-center">
+    <form method="post" action="editProfile.php" id="mainForm">
+    Edit username:<br>
+    <input type = "text" name = "username" id = "username" placeholder = "New username... ">
+    <br>
+    Edit first name:<br>
+    <input type="text" name="firstname" id="firstname" placeholder="First name...">
+    <br>
+    Edit last name:<br>
+    <input type="text" name="lastname" id="lastname" placeholder="Last name...">
+    <br>
+    Edit email:<br>
+    <input type="text" name="email" id="email" placeholder="Email address...">
+    <br>
+    <h4 style="color: rgb(224, 53, 53);">Enter password to confirm changes:</h4>
+    <input type="password" name="password" id="password" placeholder="Password..." class="required">
+    <br>
+    <input type="submit" value="Confirm">
+    </form>
+            </div>
+            </body>
+    </html>

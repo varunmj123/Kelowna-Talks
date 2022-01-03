@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Search for a User</title>
+        <link rel = "stylesheet" type = "text/css" href = "css/finduser.css"/>   
+        <script type="text/javascript" src="scripts/validate.js"></script>        
+    </head>
+    <body>
+    <div class="logo">
+        <img src="src\client\img\1.png" alt="Email this to someone" style="width:50px;height:50px;">
+    </div>
+    <div class="topnav">
+        <link rel="stylesheet" href="src\client\css\forumpages.css" />
+        <a href="guest_homepage.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="sitestosee.html">Sites To See</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="business.html">Business</a>
+        <a href="liveweather.html">Live Weather</a>
+        <div class="loginbuttons">
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Sign In</a>
+        </div>
+    </div>
+    <head>
+        <style>
+        h1 {text-align: center;}
+        </style>
+        </head>
+        <h1 style="color: rgb(224, 53, 53);">Search for a User:</h1>
+    <div class="form-center">
+      <form method="POST" action="finduser.php" id="mainForm" >
+        Username:<br><br>
+        <input type="text" name="username" id="username" class="required" placeholder="Enter username...">
+
+        <br><br>
+        <input type="submit" value="Search">
+      </form>
+        </div>
+        </body>
+</html>

@@ -1,0 +1,15 @@
+body{
+    font-family: Tahoma, Helvetica, sans-serif;
+    background:
+    /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),
+    /* bottom, image */
+    url("../src/client/img/wp4620320.jpg");
+  }
+  p,
+  body{
+    font-size: 0.9em;
+  }
